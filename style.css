@@ -5,26 +5,102 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #f598b3;
+  background-color: #e5e7e2;
 }
 
 header {
-  background-image: url(img/banner.jpeg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(229, 231, 226, 0.3)), to(rgba(118, 102, 247, 0.5))), url(img/banner.jpeg);
+  background-image: linear-gradient(to right bottom, rgba(229, 231, 226, 0.3), rgba(118, 102, 247, 0.5)), url(img/banner.jpeg);
+  background-size: cover;
   height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.title {
-  font-family: "NTR", sans-serif;
+.header-title {
   font-size: 10rem;
   color: #e5e7e2;
+  margin: 0;
+  letter-spacing: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header-sub {
+  letter-spacing: 1rem;
+  font-style: italic;
+  margin: 0;
+  font-size: 2rem;
+  color: #e5e7e2;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #f598b3;
+}
+
+.navbar-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-li {
+  font-family: "NTR", sans-serif;
+  padding: 3rem;
+  list-style-type: none;
+  font-size: 2.5rem;
+  color: #e5e7e2;
+  font-style: italic;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #e5e7e2;
+}
+
+a:hover {
+  color: beige;
+}
+
+.container {
+  width: 60vw;
+  margin: auto;
+}
+
+.box-entry {
+  background-color: #edb4f6;
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
