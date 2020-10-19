@@ -10,7 +10,14 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: color(marble);
+  //background-color: color(marble);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(color(marble), 0.3),
+      rgba(color(vblue), 0.5)
+    ),
+    url(img/bg4.jpg);
+  background-position: center;
 }
 
 header {
@@ -82,13 +89,15 @@ a:hover {
 }
 
 .container {
-  width: 60vw;
+  width: 75vw;
   margin: auto;
 }
 
 .box-entry {
   background-color: color(vpink);
-  height: 25rem;
+  height: 50vh;
   display: flex;
   justify-content: center;
+  margin: 8rem;
+  border-radius: 2rem;
 }
