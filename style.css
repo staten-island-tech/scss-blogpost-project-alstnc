@@ -29,7 +29,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
 }
 
 .header-title {
@@ -71,7 +71,7 @@ header {
 }
 
 .navbar-li {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand";
   padding: 3rem 6rem;
   list-style-type: none;
   font-size: 2.5rem;
@@ -98,16 +98,11 @@ a:hover {
 
 .box-entry {
   background-color: #edb4f6;
-  height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: auto;
   margin: 8rem;
   border-radius: 2rem;
   opacity: 0.85;
+  padding: 5rem;
 }
 
 footer {
@@ -121,13 +116,15 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: auto;
   background-color: #f598b3;
 }
 
 .footer-box {
-  width: 20vh;
+  width: 30vh;
   height: 25vh;
   margin: 5rem 10rem;
 }
@@ -162,12 +159,63 @@ footer {
   text-decoration: none;
   border: none;
   border-radius: 0.3rem;
-  font-family: "Quicksand", sans-serif;
   background-color: #7666f7;
   color: #e5e7e2;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.entry-heading {
+  font-family: "Quicksand";
+  color: #7666f7;
+  margin: 0.5rem;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.entry-text {
+  font-family: "Quicksand";
+  font-weight: bold;
+  color: #e5e7e2;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #830fec;
+}
+
+.spaced-out {
+  letter-spacing: 1rem;
+  margin-left: 1rem;
+}
+
+.box-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+#aesthetic-img {
+  max-width: 50%;
+}
+
+.more {
+  font-size: 3rem;
+  font-family: "Quicksand";
+  color: #830fec;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,10 @@
   @return map-get($colors, $color-name);
 }
 
+@function font($font-name) {
+  @return map-get($fonts, $font-name);
+}
+
 html,
 body {
   margin: 0;
@@ -34,7 +38,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: font(tnr);
 }
 
 .header-title {
@@ -69,7 +73,7 @@ header {
 }
 
 .navbar-li {
-  font-family: "Quicksand", sans-serif;
+  font-family: font(main);
   padding: 3rem 6rem;
   list-style-type: none;
   font-size: 2.5rem;
@@ -96,18 +100,18 @@ a:hover {
 
 .box-entry {
   background-color: color(vpink);
-  height: 50vh;
-  display: flex;
-  justify-content: center;
+  height: auto;
   margin: 8rem;
   border-radius: 2rem;
   opacity: 0.85;
+  padding: 5rem;
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   background-color: color(vrose);
@@ -115,7 +119,7 @@ footer {
 
 .footer-box {
   //background: blue; //to check sizing
-  width: 20vh;
+  width: 30vh;
   height: 25vh;
   margin: 5rem 10rem;
 }
@@ -150,11 +154,60 @@ footer {
   text-decoration: none;
   border: none;
   border-radius: 0.3rem;
-  font-family: "Quicksand", sans-serif;
+
   background-color: color(vblue);
   color: color(marble);
 }
 
 .bold {
   font-weight: bold;
+}
+
+.entry-heading {
+  font-family: font(main);
+  color: color(vblue);
+  margin: 0.5rem;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.entry-text {
+  font-family: font(main);
+  font-weight: bold;
+  color: color(marble);
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem color(vviolet);
+}
+
+.spaced-out {
+  letter-spacing: 1rem;
+  margin-left: 1rem;
+}
+
+.box-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 3rem;
+}
+
+#aesthetic-img {
+  max-width: 50%;
+}
+
+.more {
+  font-size: 3rem;
+  font-family: font(main);
+  color: color(vviolet);
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
